@@ -1,7 +1,0 @@
-{
-  "name": "novae_test",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
