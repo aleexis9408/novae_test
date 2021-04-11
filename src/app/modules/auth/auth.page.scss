@@ -1,0 +1,42 @@
+form {
+    //variables
+    $text-label-color: #FF0000;
+    $font-weight-label: 600;
+    $font-size-label: 10px;
+
+    margin-top: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* Settings input-field
+    ===============================*/
+    [input-field] {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #CCCCCC;
+
+      .item:nth-last-child(1){
+        .item-inner {
+          border-bottom: none !important;
+        }
+      }
+
+      .item-block {
+        overflow: visible !important;
+      }
+    }
+
+    ion-item {
+        background-color: transparent !important;
+        ion-label {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: $text-label-color !important;
+            font-size: $font-size-label;
+            font-weight: $font-weight-label;
+            line-height: 17px;
+            margin-right: 10px;
+          }
+    }
+}
