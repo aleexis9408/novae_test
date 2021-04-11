@@ -20,13 +20,13 @@ export class ApiInterceptorService {
       url: this.REST_API_SERVER + req.url
     });
 
-    if (token) {
+    /* if (token) {
       request = request.clone({
         setHeaders: {
           authorization: `Bearer ${token}`
         }
       });
-    }
+    } */
 
     return next.handle(request).pipe(
       catchError((err: HttpErrorResponse) => {

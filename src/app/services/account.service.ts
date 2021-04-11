@@ -8,7 +8,7 @@ import { requestGetAccount, responseGetAccount } from '../interfaces/novae.inter
 })
 export class AccountService {
 
-  private basePath = 'v1/getAccount2';
+  private basePath = '/v1/getAccount2';
 
   constructor(private http: HttpClient) { }
 

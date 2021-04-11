@@ -41,7 +41,7 @@ export interface requestGetAccount {
 export interface responseGetAccount {
     operationResult: operationResult,
     escapeBot: string,
-    program: AccountResult,
+    accountResultDto: AccountResult,
 }
 
 
