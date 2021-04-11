@@ -23,6 +23,7 @@ export class AuthService {
         this.isLogin = true;
         sessionStorage.setItem('token', response.authenticationToken);
         sessionStorage.setItem('email', loginObj.username);
+        sessionStorage.setItem('security', JSON.stringify(loginObj.security));
         sessionStorage.setItem('login', JSON.stringify(response));
         return response;
       }),

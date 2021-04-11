@@ -13,18 +13,13 @@ export class HomePage {
   constructor(private accountService: AccountService) { }
 
   ngOnInit() {
+    const security = JSON.parse(sessionStorage.getItem('security'));
+    const email = sessionStorage.getItem('email');
     let request: requestGetAccount = {
-      "channelId": "7",
-      "language": "en",
-      "email": "cvp2006@gmail.com",
-      "security": {
-        "ip": "12.12.12.12",
-        "host": "Localhost",
-        "cookie": "cookie",
-        "userAgent": "userAgent",
-        "deviceFingerPrint": "deviceFingerPrint"
-      }
+      channelId: "7", language: "es",
+      email, security
     };
+
     this.accountService.getAccount(request).subscribe(data => {
       this.account = data.accountResultDto;
     })

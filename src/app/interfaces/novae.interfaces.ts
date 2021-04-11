@@ -53,11 +53,10 @@ export interface AccountResult {
     balance: string,
     redemptionValuePerPoint: string,
     fl: string, // bolean?
-    accountSumaryDto: accountSumaryDto
+    accountSumaryDto: AccountSumaryDto
 }
 
-
-export interface accountSumaryDto {
+export interface AccountSumaryDto {
     status: string,
     firstName: string,
     lastName1: string,
